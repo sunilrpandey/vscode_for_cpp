@@ -117,3 +117,5 @@ Go to [MINGW download page](https://sourceforge.net/projects/mingw-w64/files/lat
 https://code.visualstudio.com/docs/cpp/config-mingw
     
 https://gourav.io/blog/setup-vscode-to-run-debug-c-cpp-code
+
+https://www.youtube.com/watch?v=DIw02CaEusY
