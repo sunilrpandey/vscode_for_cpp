@@ -1,5 +1,14 @@
 # VS Code setup for C++ on Windows
-## <a name = basics> What is required </a>
+
+- [ ] [Prerequisite ](#shortkey)
+    - [ ] [Install VSCode on Windows ](#vs_install)
+    - [ ] [Install C++ Compiler - MINGW ](#compiler_install)
+- [ ] [Keyboard shortcuts ](#shortkey)
+- [ ] [Extensions](#ext)
+- [ ] [Misc](#ext)
+- [ ] [References](#ref)
+
+## <a name = basics> Prerequisite to write, build and run a C++ program</a>
 
 Since visual studio code is just a source code editor for multiple language including C++. We need below things to setup a good C++ dev environment.
 
@@ -7,6 +16,20 @@ Since visual studio code is just a source code editor for multiple language incl
 - [ ] C++ specific formatter which helps while we write code. VS code provides various extensions to help in this such as C/C++ Extensions by Microsoft
 - [ ] C++ Compiler(such as mingw) to be used for code compilation
 
+### <a name = vs_install>Install VSCode on Windows</a>
+Go to [VS Code download page](https://code.visualstudio.com/download) and download vscode for Windows and install by double clicking the downloaded installer and following installation steps. 
+
+### <a name = compiler_install>Install C++ Compiler - MINGW</a>
+
+Please do check if MINGW is already installed on your system by running 
+```sh
+g++ --verison 
+```
+on PowerShell or Command prompt and verify 
+
+-> Dont look it in \'Program Files\' folder since generally MINGW is installed using copy/paste way and it is copied in C:\MINGW or similar. Even if it is installed using installer it copies at C:\MINGW only. You can also check environment path where it might have been added if it was installed earlier
+
+# Now we are ready :)
 Now we have editor and compiler, let us write our code, compile, debug and run.
 
 ##  Write Code
@@ -25,24 +48,11 @@ Go to Run and Debug in left side bar (Ctrl + Shift + D) and configure program to
 
 ### Please note above build/launch would be created for selected file only therefore make sure .cpp is selected. Also you can compile/run the code using  g++ compilation command such as g++ -g <cpp file name> -o <output file name> and run from command line
 
-### <a name = vs_install>Install VSCode on Windows</a>
-Go to [VS Code download page](https://code.visualstudio.com/download) and download vscode for Windows and install by double clicking the downloaded installer and following installation steps. 
-
-### <a name = compiler_install>Install C++ Compiler - MINGW</a>
-
-Please do check if MINGW is already installed on your system. Dont look it in \'Program Files\' folder since generally MINGW is installed using copy/paste way and it is copied in C:\MINGW or similar. Even if it is installed using installer it copies at C:\MINGW only. You can also check environment path where it might have been added if it was installed earlier
 
 Go to [MINGW download page](https://sourceforge.net/projects/mingw-w64/files/latest/download) and download vscode for Windows and install by double clicking the downloaded installer and following installation steps. which will copy mingw installation files at C:\MINGW or C:\MINGW64. Add it to PATH by editing environment variables.
 
 
-
-- [ ] [Keyboard shortcuts ](#shortkey)
-- [ ] [Extensions](#ext)
-- [ ] [Misc](#ext)
-
-
-## <a name = misc>Misc</a>
-**Ctrl + M  : Toggle Use of Tab Key for Setting Focus/and entring space**
+# ..and these below items really help
 
 
 ## <a name = shortkey>keyboard Shortcuts</a>
@@ -99,3 +109,10 @@ Go to [MINGW download page](https://sourceforge.net/projects/mingw-w64/files/lat
 - GitLens by EricAmodio
 - Zuul Job Browser
 - Pylance by Microsoft
+
+## <a name = misc>Misc</a>
+**Ctrl + M  : Toggle Use of Tab Key for Setting Focus/and entring space**
+
+## <a name = ref>References</a> 
+https://code.visualstudio.com/docs/cpp/config-mingw
+https://gourav.io/blog/setup-vscode-to-run-debug-c-cpp-code
