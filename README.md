@@ -119,3 +119,5 @@ https://code.visualstudio.com/docs/cpp/config-mingw
 https://gourav.io/blog/setup-vscode-to-run-debug-c-cpp-code
 
 https://www.youtube.com/watch?v=DIw02CaEusY
+
+https://code.visualstudio.com/docs/editor/variables-reference
